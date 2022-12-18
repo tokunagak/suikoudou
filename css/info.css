@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+
+.info-subttl {
+    font-size: 1.44rem;
+    margin-top: 20px;
+    line-height: 1.8;
+    color: #707070;
+    font-family:-apple-system, BlinkMacSystemFont, MyYuGothicM, "Yu Gothic", Meiryo, "Hiragino kaku Gothic ProN", sans-serif;
+}
+
+.map > iframe {
+    display: block;
+    width: 100vw;
+    height: 300px;
+}
+
+.tab-show {
+    display: none;
+}
+
+a[href*="map"] {
+    display: block;
+    color: #000;
+    text-decoration: none;
+}
+
+.ttl-h2 {
+    font-size: 1.6rem;
+}
+
+
+
+.address {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.address dt {
+    width: 24.6%;
+    font-size: 1.44rem;
+}
+.address dd {
+    width: calc(100% - 24.6%);
+    font-size: 1.44rem;
+    color: #707070;
+    margin-bottom: 11px;
+    line-height: 1.6;
+}
+
+
+@media (min-width: 480px) { /*tab*/
+    .tab-show {
+        display: block;
+    }
+    
+}
+
+@media (min-width: 980px) { /*pc*/
+    
+    .ttl-h1 {
+        font-size: 2.8rem;
+    }
+    .map {
+        width: calc(100% - 50% - 17%);
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 17%;
+        display: none;
+        transition: all .3s;
+    }
+    
+    .map.active {
+        display: block;
+    }
+    .map > iframe {
+        width: 100%;
+        height: 100vh;
+    }
+    .contetn {
+        padding: 40px 10%; 
+    }
+    a[href*="map"] > div.is-active  {
+        background-color: #F7E8F0;
+
+    }
+    
+    .address dt {
+        width: 86px;
+    } 
+    
+}

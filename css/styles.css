@@ -1,0 +1,377 @@
+@charset "UTF-8";
+
+html {
+    font-size: 62.5%;
+    
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, MyYuGothicM, "Yu Gothic", Meiryo, "Hiragino kaku Gothic ProN", sans-serif;
+    line-height: 1.4;
+    overflow: scroll;
+}
+/* common parts*/
+.d-f {
+    display: flex;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: top;
+}
+
+.inner {
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.sp-hide {
+    display: none;
+}
+.pc-hide {
+    display: block;
+}
+
+.bgc-main {
+    background-color: #FDECF9;
+}
+
+
+.bgc-slider-1 {
+    background-color: #F7E8F0;
+}
+.bgc-slider-2 {
+    background-color: #E7F4E2;
+}
+
+/*--------------------
+    header
+---------------------*/
+#header {
+    padding-top: 20px;
+    padding-bottom: 15px;
+
+}
+
+#header .logo{
+    width: 70px;
+    margin: 0 auto 20px;
+}
+#header .logo .logo-link{
+    display: block;
+}
+    
+/*    nav    */
+.nav-list {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+.nav-list li{
+    width: 25%;
+    text-align: center;
+}
+.nav-list li a{
+    text-decoration: none;
+    font-size: 1.44rem;
+    font-family: 'Hannari', serif;
+    color: #707070;
+    cursor: pointer;
+}
+.nav-list li a.here{
+    color: #d270a1;
+}
+.nav-list .nav-icon {
+    display: block;
+    width: 50px;
+    margin: 0 auto 10px ; 
+}
+.nav-list .nav-icon.qa {
+    margin-bottom: 0 !important;
+}
+
+/*-------------------
+    main
+-------------------*/
+
+.page-ttl {
+    padding-top: 20px;
+    padding-bottom: 25px;
+    text-align: center;
+    font-family:  'Hannari', serif;
+    font-size: 2.08rem;
+    background-color: #fff;
+}
+
+.subttl {
+    color: #707070;
+    margin-top: 20px;
+}
+
+.contetn {
+    background-color: #F5F5F5;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.contetn .txt {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.76rem;
+    color: #707070;
+    font-family: 'Hannari', serif;
+}
+
+/*--------------------
+    footer
+---------------------*/
+
+#footer {
+    background-color: #EEEEEE;
+    text-align: center;
+    padding-top: 36px;
+    padding-bottom: 36px;
+}
+
+.page-top-link {
+    display: block;
+    width: 35px;
+    height: 35px;
+    margin: 0 auto 20px;
+    border: 1px solid #aaa;
+    border-radius: 50%;
+    position: relative;
+}
+.page-top-link::before {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-top:  1px solid #aaa;
+    border-right:  1px solid #aaa;
+    transform: rotate(310deg);
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.page-top-link::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 15px;
+    background-color: #aaa;
+    position: absolute;
+    top: 10px;
+    left: 16px;
+}
+
+#footer .copyright small{
+    font-size: 1.027rem;
+    color: #aaa;
+}
+
+
+@media (min-width: 480px) { /*tab*/
+    /* common parts*/
+    
+    
+    /*--------------------
+    header
+    ---------------------*/
+    #header {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    #header .logo{
+        width: 92px;
+        margin-bottom: 30px;
+    }
+        
+    /*    nav    */
+    .nav-list li{
+        width: 19%;
+        min-width: 120px;
+    }
+    
+    .nav-list li {
+        width: 19%;
+        min-width: 120px;
+    }
+
+    /*-------------------
+        main
+    -------------------*/
+    
+    .page-ttl {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .ttl-h1 {  
+        font-size: 2.3rem;
+        letter-spacing: 2px;
+    }
+
+    .subttl {
+        font-size: 2.0rem;
+    }
+
+    .contetn {
+        padding-top: 40px;
+    }
+
+    /*--------------------
+        footer
+    ---------------------*/
+
+    .footer-inner{
+        position: relative;
+    }
+    
+    .page-top {
+        width: 35px;
+        position: absolute;
+        top: 50%;
+        right: -5%;
+        transform: translateY(-50%);
+    }
+    
+    .page-top-link {
+        margin-bottom: 0;
+    }
+}
+
+
+@media (min-width: 980px) { /*pc*/
+    /* common parts*/
+    .sp-hide {
+        display: block;
+    }
+    .pc-hide {
+        display: none;
+    }
+    
+    .f-items {
+        width: 50%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        overflow:scroll;
+    }
+    
+    .position-relative {
+        position: relative;
+    }
+    
+    .inner {
+        padding-left: 10%;
+        padding-right: 10%;
+    } 
+    
+    /*--------------------
+        header
+    ---------------------*/
+    #header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 17%;
+        height: 100vh;
+        background-color: transparent;
+        padding: 0;
+        z-index: 10;
+    }
+
+    #header .logo{
+        width: 92px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -290px 0 0 -35px;
+    }
+        
+    /*    nav    */
+    #nav {
+        position: absolute;
+        width: 100px;
+        top: 80%;
+        left: 0;
+        right: 0;
+        margin: -200px auto 0;
+    }
+    .nav-list {
+        display: block;
+    }
+    
+    .nav-list li{
+        width: 100px !important;
+        min-width: unset;
+        margin-top: 17px;
+    }
+    .nav-list li.li-qa{
+        margin-top: 10px !important;
+    }
+    
+    .nav-list .nav-icon {
+        margin-bottom: 3px; 
+    }
+    
+    /*-------------------
+        mv slider
+    -------------------*/ 
+    .mv {
+        position: relative;
+    }
+    .slider-item {
+        width: 100%;
+        height: 100vh;
+    }
+    .slider-item img{
+        width: 70%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    
+
+    /*-------------------
+        main
+    -------------------*/ 
+    #main {
+        /* flex: 1; */
+        background-color: #f5f5f5;
+    }
+    
+    .page-ttl {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    .ttl-h1 {
+        font-size: 4rem;
+    }
+
+    .contetn {
+        padding-top: 60px;
+        padding-bottom: 100px;
+    }
+    
+    .content-img {
+        text-align: center;
+    }
+
+    /*--------------------
+        footer
+    ---------------------*/
+
+    #footer {
+        text-align: left;
+    }
+    
+    .page-top {
+        right: -9%;
+    }
+
+}
+
+

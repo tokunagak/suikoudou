@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+.ttl-h2 {
+    font-size: 1.6rem;
+    
+}
+
+.contetn .txt-s {
+    font-size: 1.44rem;
+    color: #707070;
+    text-align: left;
+    line-height: 1.8;
+    font-family: -apple-system, BlinkMacSystemFont, MyYuGothicM, "Yu Gothic", Meiryo, "Hiragino kaku Gothic ProN", sans-serif;
+    margin-top: 30px;
+}
+
+.twitter-area {
+    margin-top: 20px;
+    max-width: 520px;
+    border:1px solid #ccc;
+    border-radius: 8px;
+    padding: 2px;
+    text-align: center;
+}
+
+  
+  
