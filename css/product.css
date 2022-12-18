@@ -237,7 +237,7 @@
     .area {
         width: calc(100% - 50% - 20%);
         position: absolute;
-        top: 60%;
+        top: 70%;
         left: 17%;
         transform: translateY(-70%);
     }
