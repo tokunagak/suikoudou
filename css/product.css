@@ -289,6 +289,10 @@
         font-size: 3.8rem;
     }
     
+    .area {
+        top: 60%;
+    }
+    
     .product-list-img {
         width: calc(100% / 4);
     }
@@ -296,6 +300,8 @@
     .footer-d-f{
         padding-right: 10%;
     }
+    
+    
     
     
 }
